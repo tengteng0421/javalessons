@@ -1,0 +1,26 @@
+一、注解 annotation（注释）
+	注解annotation的作用：
+		1. 不是程序本身， 可以对程序作出解释。（这一点，跟注释没有区别）
+		2. 可以被其他程序（比如：编译器等）读取。（注解信息处理流程，是注解和注释的重大区别。如果没有注解信息处理流程，则注解毫无意义）
+	注解annotation的格式：
+		1. 注解是以“@注释名”在代码中存在的，还可以添加一些参数值，例如：@SuppressWarnings(value="unchecked")。
+	注解annotation在哪里使用
+		1. 可以附加在package，class，method，field等上面，相当于给他们添加了额外的辅助信息，我们可以通过反射机制变成实现对这些元数据的访问。
+		
+二、自定义注解
+	1. @interface
+	2. 自定义注解上使用元注解
+		元注解：元注解的作用就是负责注解其他注解。java定义了4个标准的meta-annotation类型，他们被用来提供对其他annotation类型作说明。
+		这些类型和他们说支持的类在java.lang.annotation包中可以找到
+			@Target 作用：描述注解使用范围	ElementType枚举类
+			@Retention 作用： 表示需要在什么级别保存该注释信息，用于描述注解的生命周期
+				Source,Class,Runtime
+			@Documented
+			@Inherited
+	3. 注解里只有一个参数时，通常定义为"value";
+	
+三、ORM（Object Relationship Mapping）
+	类和表结构对应
+	属性和字段对应
+	对象和记录对应
+		使用注解完成类和表结构的映射关系

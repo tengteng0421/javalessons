@@ -1,0 +1,5 @@
+URL
+	http://www.google.com:80/index.html	？	#
+	协议		主机ip		端口		资源名		参数	锚点
+	
+	

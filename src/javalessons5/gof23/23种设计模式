@@ -490,7 +490,16 @@ gof23种设计模式group of four
 		-源发器类（Originator）
 		-备忘录类（Memento）
 		-负责人类（CareTake）
-
+		
+	备忘录较多时：
+		-将备忘录压栈
+		private Stack<Memento> stack = new Stack<>();
+		-将多个备忘录对象，序列化和持久化
+	开发中的场景：
+		-棋类游戏中的，悔棋
+		-普通软件中的，撤销操作
+		-数据库软件中的，事务管理中的回滚操作
+		-photoshop软件中的，历史记录
 
 
 
